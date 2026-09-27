@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNA Indonesia — Application Status</title>
+  <meta name="description" content="Check your UNA Indonesia application status. Static prototype timeline preview." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<header class="navbar" role="banner">
+  <div class="container navbar__inner">
+    <a class="brand" href="../index.html">
+      <img src="../assets/images/logo.png" alt="UNA Indonesia logo" />
+      <span class="brand__text">UNA Indonesia</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="recruitment.html">Recruitment</a>
+      <a href="application.html" class="btn btn-primary nav__cta" style="height:44px;">Apply Now</a>
+    </nav>
+  </div>
+</header>
+
+<main class="form-shell">
+  <div class="container form-card card">
+    <div class="form-title">
+      <a class="back-link" href="../index.html">← Back to Home</a>
+      <div style="flex:1;"></div>
+    </div>
+
+    <h1 class="h1" style="margin-top:12px;">Check Your Application</h1>
+    <p class="body-lg" style="margin-top:12px;">Stay updated on your recruitment journey. (Static UI prototype)</p>
+
+    <form action="#" method="GET" class="form-grid" aria-label="Application status form">
+      <fieldset>
+        <legend>Find Your Status</legend>
+        <p class="form-help">Enter your email and application ID to view the timeline preview.</p>
+
+        <label class="label" for="email">Email</label>
+        <input class="input" id="email" name="email" type="email" placeholder="you@example.com" />
+
+        <label class="label" for="appid">Application ID</label>
+        <input class="input" id="appid" name="appid" type="text" placeholder="UNA-2026-001" />
+        <div class="helper">In this prototype, data is not actually queried.</div>
+
+        <div class="form-actions" style="justify-content:flex-start;">
+          <button class="btn btn-primary" type="submit">Check Status</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sample Timeline</legend>
+        <div class="card" style="box-shadow:none;border-radius:12px;border-color:var(--border);padding:16px;">
+          <div style="font-weight:900; font-size:14px; margin-bottom:10px;">Azzahra Nailatul Jannah</div>
+          <div class="caption">Application ID: UNA-2026-001</div>
+          <div style="margin-top:12px;">
+            <div style="display:flex; gap:10px; align-items:flex-start; margin:10px 0;">
+              <span class="badge badge--interview" aria-hidden="true">●</span>
+              <div>
+                <div style="font-weight:900;">Application Submitted</div>
+                <div class="body" style="font-size:14px;line-height:20px;">Your application has been received.</div>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:10px; align-items:flex-start; margin:10px 0;">
+              <span class="badge badge--interview" aria-hidden="true">●</span>
+              <div>
+                <div style="font-weight:900;">Interview</div>
+                <div class="body" style="font-size:14px;line-height:20px;">Your application is being reviewed for the interview stage.</div>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:10px; align-items:flex-start; margin:10px 0;">
+              <span class="badge" style="background:#fff;border-color:var(--border);color:var(--text-secondary)" aria-hidden="true">○</span>
+              <div>
+                <div style="font-weight:900;">Final Decision</div>
+                <div class="body" style="font-size:14px;line-height:20px;">The final result will be announced here.</div>
+              </div>
+            </div>
+          </div>
+
+          <p class="caption" style="margin-top:10px;">
+            Note: This page is a static prototype. In a real system, the timeline updates from backend status changes.
+          </p>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</main>
+</body>
+</html>

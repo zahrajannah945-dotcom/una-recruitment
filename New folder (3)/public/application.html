@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNA Indonesia — Application Form</title>
+  <meta name="description" content="Apply to UNA Indonesia 2026. Fill your background, choose a position, and submit your application (static prototype)." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<header class="navbar" role="banner">
+  <div class="container navbar__inner">
+    <a class="brand" href="../index.html">
+      <img src="../assets/images/logo.png" alt="UNA Indonesia logo" />
+      <span class="brand__text">UNA Indonesia</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="recruitment.html">Recruitment</a>
+      <a href="status.html">Application Status</a>
+      <a class="btn btn-ghost" href="../index.html#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="form-shell">
+  <div class="container form-card card">
+    <div class="form-title">
+      <a class="back-link" href="recruitment.html">← Back to Recruitment</a>
+      <div style="flex:1;"></div>
+    </div>
+
+    <h1 class="h1" style="margin-top:12px;">Apply to UNA Indonesia</h1>
+    <p class="body-lg" style="margin-top:12px;">
+      Tell us about yourself.
+      We'd love to know more about your background, interests, and motivation to join us.
+    </p>
+
+    <form action="application-success.html" method="GET" class="form-grid" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p class="form-help">Please provide your contact details.</p>
+
+        <label class="label" for="fullname">Full Name <span class="req">*</span></label>
+        <input class="input" id="fullname" name="fullname" type="text" placeholder="Alya Putri" required />
+
+        <label class="label" for="email">Email <span class="req">*</span></label>
+        <input class="input" id="email" name="email" type="email" placeholder="alya@example.com" required />
+
+        <label class="label" for="phone">Contact Number <span class="req">*</span></label>
+        <input class="input" id="phone" name="phone" type="tel" placeholder="+62 812-3456-7890" required pattern="[0-9\\-+()\\s]+" />
+        <div class="helper">We accept formats like +62 8xx-xxxx-xxxx.</div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Application Details</legend>
+        <p class="form-help">Choose your position of interest and share your motivation.</p>
+
+        <label class="label" for="division">Position of Interest <span class="req">*</span></label>
+        <select id="division" name="division" required>
+          <option value="">-- Select a position --</option>
+          <optgroup label="Department of Internal Affairs">
+            <option value="HR-Mentorship Management Officer">HR-Mentorship Management Officer</option>
+            <option value="HR-Recruitment & Evaluation Officer">HR-Recruitment & Evaluation Officer</option>
+            <option value="HR-Training & Development Officer">HR-Training & Development Officer</option>
+            <option value="Finance & Legal Officer">Finance & Legal Officer</option>
+          </optgroup>
+          <optgroup label="Department of Program Development">
+            <option value="Research & Development - Substance Officer">Research & Development - Substance Officer</option>
+            <option value="Research & Development">Research & Development</option>
+            <option value="Monitoring & Evaluation Officer">Monitoring & Evaluation Officer</option>
+            <option value="UNAI Hub-Program">UNAI Hub-Program</option>
+          </optgroup>
+        </select>
+
+        <label class="label" for="motivation">Motivation <span class="req">*</span></label>
+        <textarea id="motivation" name="motivation" maxlength="500" placeholder="Share your motivation for joining UNA Indonesia..." required></textarea>
+        <div class="charcount" aria-hidden="true">Up to 500 characters</div>
+        <div class="helper">Write about your background, interests, and why you want to contribute to UNA Indonesia.</div>
+
+        <label class="label" for="cv">CV Upload <span class="req">*</span></label>
+        <div class="file" role="group" aria-label="Upload CV">
+          <div class="file-text">
+            <div class="division-icon" aria-hidden="true" style="width:40px;height:40px;">📄</div>
+            <div>
+              <strong>Upload your CV</strong>
+              <div class="muted">PDF, DOC, DOCX — (static prototype)</div>
+              <div class="file-hint">This frontend does not store your file. A backend is required for real uploads.</div>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx" required />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Consent & Acknowledgement</legend>
+
+        <div class="checkbox">
+          <input type="checkbox" id="consent" name="consent" required />
+          <label for="consent">
+            By submitting this form, you acknowledge that the information provided will be used for the UNA Indonesia recruitment process.
+            (This is a static prototype—no real data is stored.)
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" id="updates" name="updates" />
+          <label for="updates">You may receive recruitment updates via email (prototype).</label>
+        </div>
+      </fieldset>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Submit Application</button>
+      </div>
+
+      <p class="caption" style="margin-top:16px;">
+        Note: This is a static UI prototype. Submit redirects to a success page for demonstration only.
+      </p>
+    </form>
+  </div>
+</main>
+</body>
+</html>

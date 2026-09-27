@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNA Indonesia Admin — Applicant Detail</title>
+  <meta name="description" content="View and manage applicant details (static prototype)." />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+<main class="app-shell">
+  <div class="container admin-layout">
+    <aside class="sidebar" aria-label="Admin sidebar">
+      <div class="sidebar-brand">
+        <img src="../../assets/images/logo.png" alt="" />
+        <div style="font-weight:900;">UNA Indonesia</div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="sidebar-link" href="dashboard.html">Dashboard <span aria-hidden="true">▸</span></a>
+        <a class="sidebar-link sidebar-link--active" href="applicants.html">Applicants <span aria-hidden="true">▸</span></a>
+        <a class="sidebar-link" href="#" aria-disabled="true">Settings <span aria-hidden="true">▸</span></a>
+        <a class="sidebar-link" href="login.html">Logout <span aria-hidden="true">▸</span></a>
+      </nav>
+    </aside>
+
+    <section class="main" aria-label="Applicant detail">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <div>
+          <a class="back-link" href="applicants.html">← Back to Applicants</a>
+          <h1 style="margin:12px 0 4px;">Alya Putri</h1>
+          <p class="main-sub">Application ID: UNA-2026-001</p>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:20px;">
+        <div class="card card-pad">
+          <h3 class="h3" style="font-size:18px; line-height:26px;">Personal Information</h3>
+          <div style="margin-top:14px;">
+            <div class="body" style="font-size:12px; font-weight:900; text-transform:uppercase; color:var(--text-secondary);">Full Name</div>
+            <div class="body" style="margin-top:3px;">Alya Putri</div>
+
+            <div class="body" style="font-size:12px; font-weight:900; text-transform:uppercase; color:var(--text-secondary); margin-top:12px;">Email</div>
+            <div class="body" style="margin-top:3px;">alya.putri@example.com</div>
+
+            <div class="body" style="font-size:12px; font-weight:900; text-transform:uppercase; color:var(--text-secondary); margin-top:12px;">Contact Number</div>
+            <div class="body" style="margin-top:3px;">+62 812-3456-7890</div>
+
+            <div class="body" style="font-size:12px; font-weight:900; text-transform:uppercase; color:var(--text-secondary); margin-top:12px;">Applied Position</div>
+            <div class="body" style="margin-top:3px;">HR-Recruitment & Evaluation Officer</div>
+          </div>
+        </div>
+
+        <div class="card card-pad">
+          <h3 class="h3" style="font-size:18px; line-height:26px;">Application Status</h3>
+          <div style="margin-top:14px;">
+            <div class="body" style="font-size:12px; font-weight:900; text-transform:uppercase; color:var(--text-secondary);">Current Status</div>
+            <div style="margin-top:6px;"><span class="badge badge--pending">Pending Review</span></div>
+
+            <div class="body" style="font-size:12px; font-weight:900; text-transform:uppercase; color:var(--text-secondary); margin-top:12px;">Applied Date</div>
+            <div class="body" style="margin-top:3px;">November 15, 2025 at 14:30</div>
+
+            <div class="body" style="font-size:12px; font-weight:900; text-transform:uppercase; color:var(--text-secondary); margin-top:12px;">Last Updated</div>
+            <div class="body" style="margin-top:3px;">November 15, 2025 at 14:30</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-pad" style="margin-top:20px;">
+        <h3 class="h3" style="font-size:18px; line-height:26px;">Motivation</h3>
+        <p class="body" style="margin-top:12px;">
+          I'm passionate about youth engagement and organizational development. I believe UNA Indonesia is doing important work connecting Indonesian youth to global governance. I want to contribute to the HR and recruitment efforts, particularly in supporting mentorship and evaluation processes that help identify and develop talented individuals who share our values.
+        </p>
+      </div>
+
+      <div class="card card-pad" style="margin-top:20px;">
+        <h3 class="h3" style="font-size:18px; line-height:26px;">Curriculum Vitae</h3>
+        <div style="margin-top:12px; padding:12px; border-radius:12px; background:var(--surface); border:1px solid var(--border);">
+          <div class="body" style="font-weight:900;">Alya_CV_2025.pdf</div>
+          <div class="caption" style="margin-top:4px;">Uploaded November 15, 2025</div>
+          <div style="margin-top:12px; display:flex; gap:10px;">
+            <button class="btn btn-outline" style="padding:0 16px; height:40px; font-size:14px;">View CV</button>
+            <button class="btn btn-ghost" style="padding:0 16px; height:40px; font-size:14px;">Download</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-pad" style="margin-top:20px;">
+        <h3 class="h3" style="font-size:18px; line-height:26px;">Status History</h3>
+        <div style="margin-top:14px; display:grid; gap:12px;">
+          <div style="padding:12px; border-radius:12px; border-left:3px solid var(--primary); background:rgba(239,246,255,0.5);">
+            <div class="body" style="font-weight:900;">Submitted</div>
+            <div class="caption">November 15, 2025 at 14:30</div>
+            <div class="body" style="font-size:14px; margin-top:6px;">Application received and queued for review.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-pad" style="margin-top:20px;">
+        <h3 class="h3" style="font-size:18px; line-height:26px;">Admin Actions</h3>
+        <p class="body" style="margin-top:8px; color:var(--text-secondary);">Update applicant status to move through recruitment stages.</p>
+        
+        <div style="margin-top:16px; display:grid; gap:12px;">
+          <div>
+            <label class="label" for="new-status">Move to Status</label>
+            <select id="new-status" class="input" aria-label="Select new status">
+              <option value="">-- Select new status --</option>
+              <option value="interview">Interview</option>
+              <option value="accepted">Accepted</option>
+              <option value="rejected">Rejected</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="label" for="admin-notes">Admin Notes</label>
+            <textarea id="admin-notes" class="input" style="height:100px;" placeholder="Internal notes about this applicant..."></textarea>
+          </div>
+
+          <div style="display:flex; gap:10px;">
+            <button class="btn btn-primary" style="padding:0 20px; height:44px;">Update Status</button>
+            <button class="btn btn-danger" style="padding:0 20px; height:44px;">Reject</button>
+            <button class="btn btn-outline" style="padding:0 20px; height:44px;">Cancel</button>
+          </div>
+        </div>
+
+        <p class="caption" style="margin-top:12px;">
+          Note: This is a static UI prototype. Real status updates require a backend and will notify the applicant via email.
+        </p>
+      </div>
+    </section>
+  </div>
+</main>
+</body>
+</html>

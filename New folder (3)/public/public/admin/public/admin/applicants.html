@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNA Indonesia Admin — Applicants</title>
+  <meta name="description" content="Manage UNA Indonesia applicants (static prototype)." />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+<main class="app-shell">
+  <div class="container admin-layout">
+    <aside class="sidebar" aria-label="Admin sidebar">
+      <div class="sidebar-brand">
+        <img src="../../assets/images/logo.png" alt="" />
+        <div style="font-weight:900;">UNA Indonesia</div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="sidebar-link" href="dashboard.html">Dashboard <span aria-hidden="true">▸</span></a>
+        <a class="sidebar-link sidebar-link--active" href="applicants.html">Applicants <span aria-hidden="true">▸</span></a>
+        <a class="sidebar-link" href="#" aria-disabled="true">Settings <span aria-hidden="true">▸</span></a>
+        <a class="sidebar-link" href="login.html">Logout <span aria-hidden="true">▸</span></a>
+      </nav>
+    </aside>
+
+    <section class="main" aria-label="Applicants management">
+      <h1>Applicants</h1>
+      <p class="main-sub">Review and manage all applications.</p>
+
+      <div class="toolbar">
+        <input class="input search" type="text" placeholder="Search by name or email..." />
+        <select class="input" style="flex:0 0 180px;" aria-label="Filter by status">
+          <option value="">Status: All</option>
+          <option value="pending">Pending</option>
+          <option value="interview">Interview</option>
+          <option value="accepted">Accepted</option>
+          <option value="rejected">Rejected</option>
+        </select>
+        <select class="input" style="flex:0 0 180px;" aria-label="Filter by division">
+          <option value="">Division: All</option>
+          <option value="hr">HR Roles</option>
+          <option value="r&d">Research & Development</option>
+          <option value="me">Monitoring & Evaluation</option>
+          <option value="finance">Finance & Legal</option>
+        </select>
+      </div>
+
+      <div class="table-wrap">
+        <table role="grid" aria-label="Applicants table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Division</th>
+              <th scope="col">Status</th>
+              <th scope="col">Applied</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Alya Putri</strong></td>
+              <td>alya.putri@example.com</td>
+              <td>HR-Recruitment</td>
+              <td><span class="badge badge--pending">Pending</span></td>
+              <td>Nov 15, 2025</td>
+              <td class="actions-cell"><a href="applicant-detail.html?id=1">View</a></td>
+            </tr>
+            <tr>
+              <td><strong>Budi Santoso</strong></td>
+              <td>budi.santoso@example.com</td>
+              <td>Research & Development</td>
+              <td><span class="badge badge--interview">Interview</span></td>
+              <td>Nov 14, 2025</td>
+              <td class="actions-cell"><a href="applicant-detail.html?id=2">View</a></td>
+            </tr>
+            <tr>
+              <td><strong>Citra Dewi</strong></td>
+              <td>citra.dewi@example.com</td>
+              <td>Finance & Legal</td>
+              <td><span class="badge badge--accepted">Accepted</span></td>
+              <td>Nov 13, 2025</td>
+              <td class="actions-cell"><a href="applicant-detail.html?id=3">View</a></td>
+            </tr>
+            <tr>
+              <td><strong>Doni Hermawan</strong></td>
+              <td>doni.hermawan@example.com</td>
+              <td>Monitoring & Evaluation</td>
+              <td><span class="badge badge--pending">Pending</span></td>
+              <td>Nov 12, 2025</td>
+              <td class="actions-cell"><a href="applicant-detail.html?id=4">View</a></td>
+            </tr>
+            <tr>
+              <td><strong>Eka Wijaya</strong></td>
+              <td>eka.wijaya@example.com</td>
+              <td>HR-Training & Development</td>
+              <td><span class="badge badge--rejected">Rejected</span></td>
+              <td>Nov 11, 2025</td>
+              <td class="actions-cell"><a href="applicant-detail.html?id=5">View</a></td>
+            </tr>
+            <tr>
+              <td><strong>Fina Rahmi</strong></td>
+              <td>fina.rahmi@example.com</td>
+              <td>Research & Development</td>
+              <td><span class="badge badge--interview">Interview</span></td>
+              <td>Nov 10, 2025</td>
+              <td class="actions-cell"><a href="applicant-detail.html?id=6">View</a></td>
+            </tr>
+            <tr>
+              <td><strong>Gita Sukma</strong></td>
+              <td>gita.sukma@example.com</td>
+              <td>UNAI Hub-Program</td>
+              <td><span class="badge badge--pending">Pending</span></td>
+              <td>Nov 09, 2025</td>
+              <td class="actions-cell"><a href="applicant-detail.html?id=7">View</a></td>
+            </tr>
+            <tr>
+              <td><strong>Hendra Kusuma</strong></td>
+              <td>hendra.kusuma@example.com</td>
+              <td>Finance & Legal</td>
+              <td><span class="badge badge--accepted">Accepted</span></td>
+              <td>Nov 08, 2025</td>
+              <td class="actions-cell"><a href="applicant-detail.html?id=8">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="margin-top:20px; padding-top:20px; border-top:1px solid var(--border);">
+        <p class="caption">Showing 8 of 120 applicants</p>
+      </div>
+
+      <p class="caption" style="margin-top:12px;">
+        Note: This is a static prototype. Real search and filter require a backend.
+      </p>
+    </section>
+  </div>
+</main>
+</body>
+</html>

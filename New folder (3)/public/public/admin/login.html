@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNA Indonesia Admin — Sign In</title>
+  <meta name="description" content="UNA Indonesia admin sign in (static prototype)." />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+  <main class="form-shell">
+    <div class="container" style="max-width:520px;">
+      <div class="card card-pad" style="box-shadow:var(--shadow-elevated);">
+        <div style="display:flex; align-items:center; gap:12px; justify-content:center;">
+          <img src="../../assets/images/logo.png" alt="UNA Indonesia logo" style="width:52px; border-radius:12px;">
+        </div>
+
+        <h1 class="h1" style="text-align:center; margin-top:14px;">Recruitment Management</h1>
+        <p class="body" style="text-align:center; margin-top:8px;">Welcome back. Sign in to manage applicant applications. (Prototype)</p>
+
+        <form action="dashboard.html" method="GET" style="margin-top:20px;">
+          <label class="label" for="admin-email">Email</label>
+          <input class="input" id="admin-email" name="email" type="email" placeholder="admin@unaindonesia.org" required />
+
+          <label class="label" for="admin-pass">Password</label>
+          <input class="input" id="admin-pass" name="password" type="password" placeholder="••••••••" required />
+
+          <div class="checkbox" style="margin-top:0;">
+            <input type="checkbox" id="remember" name="remember" />
+            <label for="remember">Remember Me</label>
+          </div>
+
+          <button class="btn btn-primary" type="submit" style="width:100%; margin-top:10px;">Sign In</button>
+
+          <p class="caption" style="margin-top:12px;">
+            Authentication requires a backend. This prototype only demonstrates UI.
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
